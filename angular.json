@@ -104,6 +104,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "proyecto-angular-uno"
+    }
+  },
+  "defaultProject": "proyecto-angular-uno",
+  "cli": {
+    "analytics": false
+  }
 }
