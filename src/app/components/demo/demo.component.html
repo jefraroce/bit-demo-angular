@@ -1,0 +1,23 @@
+<!-- String Interpolation -->
+<h1>Hola {{ title }}</h1>
+
+<!-- Data Binding -->
+<input type="text" [(ngModel)]="title" >
+
+<!-- Estructuras de Control -->
+<div *ngIf="title === 'jeisson'">
+  Hola Jeisson
+</div>
+
+<div *ngFor="let numero of [1, 2, 3]">
+  {{ numero }}
+</div>
+
+<div [ngSwitch]="title">
+  <div *ngSwitchCase="'jeisson'">El switch seleccionó a Jeisson</div>
+  <div *ngSwitchCase="'samy'">El switch seleccionó a Samy</div>
+  <div *ngSwitchDefault>No hay selección</div>
+</div>
+
+<!-- Enlace de Eventos -->
+<button (click)="saludar()">Saludar</button>
