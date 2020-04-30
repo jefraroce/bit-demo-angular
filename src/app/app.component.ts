@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = '';
   nombre = '';
   edad = 0;
   lista = [];
@@ -13,4 +14,6 @@ export class AppComponent {
   agregar() {
     this.lista.push( { nombre: this.nombre, edad: this.edad } )
   }
+
+  saludar() {}
 }
